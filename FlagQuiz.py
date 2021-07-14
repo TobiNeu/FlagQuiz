@@ -90,9 +90,10 @@ class FlaggenQuiz(App):
         flagdic = {}
         file = open('flagdic.csv', 'r').readlines()
 
-        for line in file:
-            abb, country = line.split(';')
-            flagdic[str(abb).lower()] = country
+        for line in file[1:]:
+            _,abb, country = line.split(';')
+            if not _:
+                flagdic[str(abb).lower()] = country
 
         return flagdic
 

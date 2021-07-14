@@ -20,7 +20,7 @@ class FlaggenQuiz(App):
         self.image = Image(source = 'start_image.png')
         self.window.add_widget(self.image)
 
-        self.text = Label(text='Willkommen zum Flaggen-Quiz!',
+        self.text = Label(text='Herzlich Willkommen zum Flaggen-Quiz!',
                           font_size = 18,
                           bold = True,
                           halign = 'center',

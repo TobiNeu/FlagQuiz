@@ -51,21 +51,21 @@ class FlaggenQuiz(App):
 
         self.bottom_grid = GridLayout()
         self.bottom_grid.cols = 3
-        self.button = Button(text='Absenden',
+        self.button = Button(text='Absenden (STRG + A)',
                              size_hint = (1,0.5),
                              bold = True,
                              background_color = (0/255,255/255,255/255))
         self.button.bind(on_press=self.presssubmit)
 
         self.bottom_grid.add_widget(self.button)
-        self.buttonhelp = Button(text='Hilfe',
+        self.buttonhelp = Button(text='Hilfe (STRG + H)',
                                  size_hint = (1,0.5),
                                  bold = True,
                                  color = (0,0,0))
         self.buttonhelp.bind(on_press=self.showhelp)
         self.bottom_grid.add_widget(self.buttonhelp)
 
-        self.skip = Button(text='Weiter',
+        self.skip = Button(text='Weiter (STRG + W)',
                            size_hint=(1, 0.5),
                            bold=True,
                            color = (0,0,0))
